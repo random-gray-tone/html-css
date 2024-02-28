@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Arquivo</title>
+</head>
+<body>
+    <h1>Criar Arquivo</h1>
+    <button id="downloadButton">Baixar Arquivo</button>
+
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Conteúdo do arquivo
+            var conteudoArquivo = 'Este é o conteúdo do seu arquivo.\nVocê pode colocar o que quiser aqui!';
+
+            // Cria um novo objeto Blob
+            var arquivoBlob = new Blob([conteudoArquivo], { type: 'text/plain' });
+
+            // Cria um link para o arquivo
+            var linkDownload = document.createElement('a');
+            linkDownload.download = 'meuarquivo.txt'; // Nome do arquivo
+            linkDownload.innerHTML = 'Baixar Arquivo';
+
+            // Checa se o navegador suporta a propriedade 'download'
+            if ('download' in linkDownload) {
+                // Cria um URL para o arquivo Blob
+                var url = URL.createObjectURL(arquivoBlob);
+                linkDownload.href = url;
+                // Adiciona o link ao corpo do documento
+                document.body.appendChild(linkDownload);
+                // Simula um clique no link para iniciar o download
+                linkDownload.click();
+                // Remove o link do corpo do documento
+                document.body.removeChild(linkDownload);
+                
+                new Notification('check',{
+                    body:'tudo certo por aqui'
+                
+                    
+                })
+                 
+            } else {
+                // Se o navegador não suporta a propriedade 'download'
+                // Você pode exibir uma mensagem alternativa ou redirecionar o usuário para uma página que ofereça suporte
+                console.log('Seu navegador não suporta a funcionalidade de download de arquivos.');
+            }
+            }
+        )
+    </script>
+</body>
+</html>

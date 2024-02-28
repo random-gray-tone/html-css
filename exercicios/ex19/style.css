@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color:rgb(42, 78, 66) ;
+    font-weight: bolder;
+}
+h2{
+    color: rgb(14, 160, 97);
+    font-weight: bolder;
+}
+.basico{
+    color: rgb(13, 164, 13);
+    font-weight: bolder;
+}
+.intermediario{
+    color: rgb(176, 176, 6);
+    font-weight: bolder;
+}
+.avançado{
+    color: rgb(186, 5, 5);
+    font-weight: bolder;
+}

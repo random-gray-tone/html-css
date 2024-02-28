@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@font-face {
+    font-family:idroid;
+    src: url(fontes/idroid.otf);
+}
+header{
+    background-image: linear-gradient(to  top,#1A5C38,#3BD27F);
+    height: 8em;
+    text-align: center;
+    font-family: idroid;
+    color: white;
+}
+header>h1{
+    font-size:0.5 ;
+}
+header>p{
+    font-size:x-small ;
+    font-weight: normal;
+}
+#comaim{
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    word-wrap: break-word;
+    font-weight: bold;
+    border-radius: 5px;
+}
+body{
+    background-color: #84E1AD;
+}
+footer{
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}  
+h1{
+    font-family: idroid;
+    font-size: large;
+    text-align: left;
+    color: #1A5C38;
+    margin-left: 5px;
+}
+h2{
+    font-family: idroid;
+    font-size:1em ;
+    text-align: left;
+    color: #4F8768;
+    background-image: linear-gradient(to right,#a9f8cb,white);
+    margin-left: 5px;
+}
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+span{
+    background-color: #a9f8cb;
+}
+/*#mascprime{
+    width: 100%;
+}
+.containe#criadora{
+    width: 100%;
+    overflow: hidden;
+}*/
+img{
+    width: 100%;
+}
+#quadmais{
+    background-color: #c6f3da;
+    border-radius: 15px;
+
+    
+}
+div#sabermais{
+    background-color:#56e195 ;
+    height: 3em;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.container{
+    display: flex;
+    
+}
+#maissp1{
+    text-align: left;
+    width: 40%;
+    flex: 1;
+    font-size: small;
+}
+
+iframe{
+    width: 100%;
+}
